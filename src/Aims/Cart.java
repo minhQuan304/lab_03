@@ -52,4 +52,15 @@ public class Cart {
 		}
 		return total;
 	}
+
+	public void printCartDetails() {
+		System.out.println("***********************CART***********************");
+		System.out.println("Ordered Items: ");
+		for (int i = 0; i < items.size(); i++) {
+			DigitalVideoDisc disc = items.get(i);
+			System.out.println((i + 1) + ". " + disc.toString()); // Use toString() of DVD
+		}
+		System.out.println("Total cost: " + totalCost());
+		System.out.println("***************************************************");
+	}
 }
