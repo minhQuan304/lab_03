@@ -1,0 +1,1 @@
+Java là một ngôn ngữ pass by value, nhưng khi làm việc với đối tượng, bạn đang truyền giá trị của tham chiếu đến đối tượng đó, chứ không phải bản sao của đối tượng. Điều này khiến cho việc thay đổi thuộc tính của đối tượng trong phương thức có thể ảnh hưởng đến đối tượng gốc.
