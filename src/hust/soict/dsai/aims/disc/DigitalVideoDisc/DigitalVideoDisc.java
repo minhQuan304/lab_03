@@ -1,4 +1,4 @@
-package Aims;
+package hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 public class DigitalVideoDisc {
 
