@@ -6,20 +6,19 @@ public class Aims {
 		DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars", "Science Fiction", "George Lucas", 120, 24.95f);
 		DigitalVideoDisc dvd3 = new DigitalVideoDisc("Cinderella", "Animation", "Clyde Geronimi", 85, 15.95f);
 
-		// Create a Cart
 		Cart anOrder = new Cart();
 
-		// Add DVDs to the cart
 		anOrder.addDigitalVideoDisc(dvd1);
 		anOrder.addDigitalVideoDisc(dvd2);
 		anOrder.addDigitalVideoDisc(dvd3);
 
-		// Print Cart details
-		anOrder.printCartDetails(); // This will print the cart details
+		anOrder.printCartDetails();
 
-		// Remove a DVD and print the cart again
-		anOrder.removeDigitalVideoDisc(dvd2);
-		anOrder.printCartDetails(); // This will print the updated cart details
+		anOrder.searchById(2);
+		anOrder.searchById(5);
+
+		anOrder.searchByTitle("Star wars");
+		anOrder.searchByTitle("Frozen");
 	}
 
 }
